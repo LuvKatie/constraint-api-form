@@ -22,11 +22,33 @@ input:not(:placeholder-shown):invalid {
     border-color: #900;
     background-color: #fdd;
 }
+
+input:valid {
+    border-color: rgb(25, 224, 18);
+    background-color: rgb(234, 248, 222);
+}
   
-input:focus:invalid {
+input:focus:invalid,
+input:focus {
     outline: none;
 }
 
 p * {
     display: block;
+}
+
+.error {
+    width: 256px;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+}
+  
+.error.active {
+    padding: 0.3em;
 }

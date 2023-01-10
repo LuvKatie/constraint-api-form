@@ -20,14 +20,14 @@
         <p>
             <label for="country">
                 <span>Please enter your Country:</span>
-                <input type="text" name="country" id="country" required minlenght="3" placeholder="United States">
+                <input type="text" name="country" id="country" required minlength="3" placeholder="United States">
                 <span class="error" aria-live="polite"></span>
             </label>
         </p>
         <p>
             <label for="zipcode">
                 <span>Please enter your ZipCode:</span>
-                <input type="text" name="zipcode" id="zipcode" required minlength="5" placeholder="00000">
+                <input type="text" name="zipcode" id="zipcode" required minlength="5" placeholder="00000" pattern="[0-9]{5,}">
                 <span class="error" aria-live="polite"></span>
             </label>
         </p>
