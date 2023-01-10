@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    
+    <form novalidate>
+        <p>
+            <label for="mail">
+                <span>Please enter an email address:</span>
+                <input type="email" name="mail" id="mail" required minlength="8" placeholder="example@example.com">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <label for="country">
+                <span>Please enter your Country:</span>
+                <input type="text" name="country" id="country" required minlenght="3" placeholder="United States">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <label for="zipcode">
+                <span>Please enter your ZipCode:</span>
+                <input type="text" name="zipcode" id="zipcode" required minlength="5" placeholder="00000">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <label for="password">
+                <span>Please enter your Password:</span>
+                <input type="password" name="password" id="password" required minlength="6" placeholder="******">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <button>Submit</button>
+    </form>
 </body>
 </html>

@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1px solid black;
+    width: 250px;
+}
+
+input:not(:placeholder-shown):invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+  
+input:focus:invalid {
+    outline: none;
+}
+
+p * {
+    display: block;
+}
